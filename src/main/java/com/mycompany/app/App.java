@@ -1,21 +1,17 @@
 package com.mycompany.app;
 
-import com.google.cloud.storage.Bucket;
-import com.google.cloud.storage.Storage;
-import com.google.cloud.storage.StorageOptions;
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.Collections;
+import java.util.spi.LocaleServiceProvider;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        String projectId = "stellar-day-254222";
-        Storage storage = StorageOptions.newBuilder().setProjectId(projectId).build().getService();
-        for(Bucket bucket: storage.list().iterateAll()) {
-          System.out.println(bucket);
-        }
-    }
+
+
+
+public class App {
+
+  public static void main(String[] args) {
+  }
+
 }
